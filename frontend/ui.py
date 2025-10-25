@@ -58,6 +58,12 @@ fig.update_traces(
     )
 )
 
+fig.update_layout(
+    coloraxis_colorbar=dict(
+        title="Cost per MCF ($)",   # <-- new label
+    )
+)
+
 # Update map and layout styling
 fig.update_geos(
     fitbounds="locations",
