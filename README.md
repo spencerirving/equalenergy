@@ -1,6 +1,6 @@
 # EqualFlow - Natural Gas Priced Equalization
 
-# -- Hack PSU Fall 2025
+## Hack PSU Fall 2025
 
 **Goal:** Given state-level **production** and **consumption** compute:
 
@@ -12,7 +12,7 @@
 
 - this shows where each state should get its natural gas demand from that results in a narrower dispersion of prices
 
-# How it works (MVP)
+### How it works (MVP)
 
 - Builds `State` objects from `data/states.csv `.
 - Computes each state's surplus/deficit
@@ -26,7 +26,7 @@
     - This value can be changed to account for a different base cost
 - The output flows and per state prices are outputted to `backend./equalflow/output`
 
-# Files
+### Files
 
 - `src/models.py` - `State`, simple dataclass for each state
 - `src/engine.py` - core matching + price computation
@@ -35,20 +35,29 @@
 - `src/calculate_percentages.py` - calculates source percentages for each state
 - `data/states.csv` - sample 2023 input (edit with real numbers)
 - `data/states_latlon.csv` - central latitude and longitude coordianates of each state to calculate distance
-- `data/current_state_prices_2023.csv` (unused) - actual 2023 state residential prices
+- `data/current_state_prices_2023.csv`- actual 2023 state residential prices
 - `output/state_prices.csv` - final prices
 - `output/flows.csv` - who sold to whom
 - `output/summary.json` - basic metrics
 - `output/buyer_source_percentages` - percent of where each state recieved their natural gas from
+- `frontend/2023_data_ui.py` - this is a map display the variation of actual 2023 prices
+- `frontend/simulated_ui.py` - this is a map that displays our calculated variation prices
 
-# Quick start
+### Quick start
 
 ```bash
 python3 backend/equalflow/run_EqualFlow.py
-python3 frontend/ui.py
 ```
 
-# Assumptions
+```bash
+python3 frontend/simulated_ui.py
+```
+
+```bash
+python3 frontend/old_2023_map_ui.py
+```
+
+### Assumptions
 
 - Units: **MMBtu** for pricing, **Bcf** for volume in input.
 - Internal conversion assumes **1 Bcf ≈ 1,037,000 MMBtu**.
