@@ -2,15 +2,33 @@ import plotly.express as px
 import pandas as pd
 import json
 from urllib.request import urlopen
+import os
 
-# --- Load 2023 Price Data from CSV ---
-df = pd.read_csv("../backend/equalflow/data/current_state_prices_2023.csv")
+# --- Determine CSV Path Robustly ---
+csv_path = os.path.join("..", "backend", "equalflow", "data", "current_state_prices_2023.csv")
+if not os.path.exists(csv_path):
+    raise FileNotFoundError(f"CSV file not found at {csv_path}. Check working directory: {os.getcwd()}")
+
+# --- Load CSV ---
+df = pd.read_csv(csv_path)
+
+# Strip whitespace from state names (common source of errors)
+df["State"] = df["State"].str.strip()
 
 # --- Load GeoJSON for US States ---
-with urlopen("https://raw.githubusercontent.com/PublicaMundi/MappingAPI/master/data/geojson/us-states.json") as response:
+geojson_url = "https://raw.githubusercontent.com/PublicaMundi/MappingAPI/master/data/geojson/us-states.json"
+with urlopen(geojson_url) as response:
     states_geo = json.load(response)
 
-# --- Custom Blue Gradient (User's Palette) ---
+geo_states = [feature["properties"]["name"] for feature in states_geo["features"]]
+
+# --- Check for mismatched states ---
+csv_states = set(df["State"])
+missing_states = csv_states - set(geo_states)
+if missing_states:
+    print("Warning: The following states in CSV do not match GeoJSON and will not be displayed:", missing_states)
+
+# --- Custom Blue Gradient ---
 custom_scale = [
     [0.0, "#03045e"],
     [0.12, "#023e8a"],
@@ -51,7 +69,7 @@ fig.update_traces(
 # --- Layout and Style ---
 fig.update_layout(
     coloraxis_colorbar=dict(title="Price per MCF ($)"),
-    paper_bgcolor="#001233",   # Deep navy background for contrast
+    paper_bgcolor="#001233",
     plot_bgcolor="#001233",
     geo_bgcolor="#001233",
     font=dict(color="white"),
@@ -70,5 +88,13 @@ fig.update_geos(
 
 fig.update_traces(marker_line_color="white", marker_line_width=1.2)
 
-# --- Display ---
-fig.show()
+# --- Export HTML and Display ---
+html_path = os.path.join(os.getcwd(), "current_state_prices_map.html")
+fig.write_html(html_path)
+print(f"Map successfully created and saved to {html_path}. Open this file in a browser to view the map.")
+
+# For interactive display in Jupyter/VS Code
+try:
+    fig.show()
+except Exception:
+    print("Interactive display failed. Open the HTML file in a browser.")
