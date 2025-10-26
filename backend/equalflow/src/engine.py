@@ -52,33 +52,64 @@ def greedy_match(states: List[State], transport_costs: Dict[Tuple[str,str], floa
     buyer_cost_buckets = {c.name: [] for c in consumers}
 
     
-    for _ in range(10000): 
-        consumers.sort(key=lambda x: x.net_mmbtu)  # Sort consumers by largest deficit first - most negative first
-        for buyer in consumers:
+        # Greedy matching process
+    for _ in range(500):  # limit iterations
+        # Check if all buyers are fulfilled
+        unfilled = [c for c in consumers if c.net_mmbtu < 0]
+        if not unfilled:
+            break
+
+        # Sort consumers by largest deficit first
+        consumers.sort(key=lambda x: x.net_mmbtu)
+
+        for buyer in unfilled:
             need = abs(buyer.net_mmbtu)
-            # rank producers by delivered unit cost: base + transport
+            if need <= 0:
+                continue
+
+            # Rank available producers by delivered cost
             ranked = sorted(
                 [p for p in producers if p.net_mmbtu > 0],
                 key=lambda p: (config.BASE_PRICE + transport_costs.get((p.name, buyer.name), 1e9))
             )
 
             for seller in ranked:
-                if need <= 0: break
-                available = seller.net_mmbtu
-                if available <= 0: 
-                    continue
-    
-                take = min(available, need, config.CHUNK_MMBTU)
-                seller.net_mmbtu -= take  # Record enrty
-                buyer.net_mmbtu += take
-                seller.sell_to.append((buyer.name, take))
-                buyer.buy_from.append((seller.name, take))
+                if need <= 0:
+                    break
 
-                # Price for this chunk at buyer = base + transport
+                available = seller.net_mmbtu
+                if available <= 0:
+                    continue
+
+                take = min(available, need, config.CHUNK_MMBTU)
+                seller.net_mmbtu -= take
+                buyer.net_mmbtu += take
+
+                # --- merge duplicate flows ---
+                found = False
+                for i, (b, q) in enumerate(seller.sell_to):
+                    if b == buyer.name:
+                        seller.sell_to[i] = (b, q + take)
+                        found = True
+                        break
+                if not found:
+                    seller.sell_to.append((buyer.name, take))
+
+                found = False
+                for i, (s_name, q) in enumerate(buyer.buy_from):
+                    if s_name == seller.name:
+                        buyer.buy_from[i] = (s_name, q + take)
+                        found = True
+                        break
+                if not found:
+                    buyer.buy_from.append((seller.name, take))
+                # ------------------------------
+
                 delivered = config.BASE_PRICE + transport_costs.get((seller.name, buyer.name), 0.0)
                 buyer_cost_buckets[buyer.name].append((take, delivered))
 
                 need -= take
+
 
     
     for s in states:# Final fulfillment flags

@@ -17,6 +17,24 @@ df = pd.DataFrame({
     "cost_per_mcf": second_column
 })
 
+# --- NEW CODE: add natural gas source data ---
+buyer_sources = pd.read_csv("../backend/equalflow/output/buyer_source_percentages.csv")
+
+# Build hover info per buyer
+hover_info = {}
+for buyer, group in buyer_sources.groupby("Buyer"):
+    lines = [f"{row['Seller']}: {row['Percent']:.2f}%" for _, row in group.iterrows()]
+    hover_info[buyer] = "<br>".join(lines)
+
+# For states not listed as buyers, assume 100% from themselves
+for state in df["state"]:
+    if state not in hover_info:
+        hover_info[state] = f"{state}: 100% (self-supplied)"
+
+# Attach hover text to the dataframe
+df["hover_text"] = df["state"].map(hover_info)
+# --- END NEW CODE ---
+
 # Load GeoJSON for US states
 with urlopen("https://raw.githubusercontent.com/PublicaMundi/MappingAPI/master/data/geojson/us-states.json") as response:
     states_geo = json.load(response)
@@ -45,10 +63,13 @@ fig = px.choropleth(
     title="Natural Gas Prices by State"
 )
 
+# --- UPDATED HOVER TEMPLATE ---
 fig.update_traces(
     hovertemplate=
-    "<b>%{location}</b><br>" +           # State name bolded
-    "Cost per MCF: <b>$%{z:.2f}</b><extra></extra>",  # z is the color value
+    "<b>%{location}</b><br><br>" +          # <- extra line after state name
+    "Cost per MCF: <b>$%{z:.2f}</b><br><br>" +  # <- extra line before sources
+    "%{customdata[0]}<extra></extra>",  # source percentages
+    customdata=df[["hover_text"]],
     hoverlabel=dict(
         bgcolor="#240046",  # deep purple hover background
         font_size=14,
@@ -57,6 +78,7 @@ fig.update_traces(
         bordercolor="white"
     )
 )
+# --- END UPDATE ---
 
 fig.update_layout(
     coloraxis_colorbar=dict(
