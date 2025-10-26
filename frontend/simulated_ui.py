@@ -60,7 +60,7 @@ fig = px.choropleth(
     color_continuous_scale=custom_scale,
     range_color=(df["cost_per_mcf"].min(), df["cost_per_mcf"].max()),
     scope="usa",
-    title="Natural Gas Prices by State"
+    title="Simulated Natural Gas Prices by State"
 )
 
 # --- UPDATED HOVER TEMPLATE ---
