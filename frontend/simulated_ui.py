@@ -82,7 +82,7 @@ fig.update_traces(
 
 fig.update_layout(
     coloraxis_colorbar=dict(
-        title="Cost per MCF ($)",   # <-- new label
+        title="Price per MMBtu ($)",   # <-- new label
     )
 )
 

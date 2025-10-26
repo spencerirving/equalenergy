@@ -68,7 +68,7 @@ fig.update_traces(
 
 # --- Layout and Style ---
 fig.update_layout(
-    coloraxis_colorbar=dict(title="Price per MCF ($)"),
+    coloraxis_colorbar=dict(title="Price per MMBtu ($)"),
     paper_bgcolor="#001233",
     plot_bgcolor="#001233",
     geo_bgcolor="#001233",
