@@ -1,7 +1,7 @@
 {
   "total_production_mmbtu": 38520537847000.0,
-  "total_consumption_mmbtu": 33736426492000.0,
-  "total_deficit_mmbtu_after": 7704283263000.0,
+  "total_consumption_mmbtu": 33739519863000.0,
+  "total_deficit_mmbtu_after": 7704939720000.0,
   "unfulfilled_states": 16,
-  "average_price": 3.223618213710267
+  "average_price": 3.253997381919939
 }

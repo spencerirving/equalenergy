@@ -5,7 +5,7 @@ Alabama,Oklahoma,11.93
 Alabama,Pennsylvania,11.93
 Alabama,Texas,11.93
 Alabama,West Virginia,11.93
-Alabama,Colorado,10.13
+Alabama,Colorado,10.12
 Alabama,Ohio,6.63
 Alabama,Wyoming,6.06
 Alabama,North Dakota,5.54
@@ -40,18 +40,18 @@ California,Texas,11.93
 California,West Virginia,11.93
 California,Colorado,10.14
 California,Ohio,6.63
-California,Wyoming,6.07
-California,North Dakota,5.56
+California,Wyoming,6.06
+California,North Dakota,5.54
 California,Arkansas,0.05
 Connecticut,Louisiana,10.69
 Connecticut,Oklahoma,10.69
 Connecticut,Pennsylvania,10.69
 Connecticut,Texas,10.69
 Connecticut,West Virginia,10.69
-Connecticut,Colorado,10.66
+Connecticut,Colorado,10.69
 Connecticut,New Mexico,10.66
-Connecticut,Ohio,9.15
-Connecticut,Wyoming,8.38
+Connecticut,Ohio,9.14
+Connecticut,Wyoming,8.37
 Connecticut,North Dakota,7.66
 Connecticut,Arkansas,0.03
 Delaware,Pennsylvania,10.09
@@ -74,7 +74,7 @@ Florida,West Virginia,11.93
 Florida,Colorado,10.14
 Florida,Ohio,6.63
 Florida,Wyoming,6.06
-Florida,North Dakota,5.55
+Florida,North Dakota,5.54
 Florida,Arkansas,0.05
 Georgia,Louisiana,11.93
 Georgia,New Mexico,11.93
@@ -82,11 +82,22 @@ Georgia,Oklahoma,11.93
 Georgia,Pennsylvania,11.93
 Georgia,Texas,11.93
 Georgia,West Virginia,11.93
-Georgia,Colorado,10.14
+Georgia,Colorado,10.12
 Georgia,Ohio,6.63
 Georgia,Wyoming,6.06
 Georgia,North Dakota,5.54
 Georgia,Arkansas,0.05
+Hawaii,Colorado,9.7
+Hawaii,Louisiana,9.7
+Hawaii,New Mexico,9.7
+Hawaii,North Dakota,9.7
+Hawaii,Ohio,9.7
+Hawaii,Oklahoma,9.7
+Hawaii,Texas,9.7
+Hawaii,West Virginia,9.7
+Hawaii,Wyoming,9.7
+Hawaii,Pennsylvania,9.48
+Hawaii,Arkansas,3.23
 Idaho,Colorado,10.04
 Idaho,Wyoming,10.04
 Idaho,North Dakota,10.01
@@ -115,7 +126,7 @@ Indiana,Oklahoma,11.93
 Indiana,Pennsylvania,11.93
 Indiana,Texas,11.93
 Indiana,West Virginia,11.93
-Indiana,Colorado,10.14
+Indiana,Colorado,10.12
 Indiana,Ohio,6.63
 Indiana,Wyoming,6.06
 Indiana,North Dakota,5.54
@@ -142,16 +153,16 @@ Kansas,Ohio,9.97
 Kansas,Pennsylvania,9.97
 Kansas,West Virginia,9.97
 Kansas,Arkansas,0.05
+Kentucky,Louisiana,10.31
+Kentucky,Oklahoma,10.31
 Kentucky,Pennsylvania,10.31
 Kentucky,West Virginia,10.31
-Kentucky,Louisiana,10.31
+Kentucky,Texas,10.31
 Kentucky,Colorado,10.28
 Kentucky,New Mexico,10.28
-Kentucky,Oklahoma,10.28
-Kentucky,Texas,10.28
 Kentucky,Ohio,10.13
-Kentucky,Wyoming,9.29
-Kentucky,North Dakota,8.49
+Kentucky,Wyoming,9.25
+Kentucky,North Dakota,8.45
 Kentucky,Arkansas,0.04
 Maine,North Dakota,10.08
 Maine,Ohio,10.08
@@ -164,17 +175,17 @@ Maine,Oklahoma,9.92
 Maine,Texas,9.92
 Maine,Wyoming,9.92
 Maine,Arkansas,0.17
+Maryland,Pennsylvania,10.71
+Maryland,West Virginia,10.69
 Maryland,Colorado,10.68
 Maryland,Louisiana,10.68
+Maryland,New Mexico,10.68
 Maryland,Oklahoma,10.68
-Maryland,Pennsylvania,10.68
 Maryland,Texas,10.68
-Maryland,West Virginia,10.68
-Maryland,New Mexico,10.66
-Maryland,Ohio,9.17
+Maryland,Ohio,9.13
 Maryland,Wyoming,8.37
 Maryland,North Dakota,7.65
-Maryland,Arkansas,0.05
+Maryland,Arkansas,0.03
 Massachusetts,Louisiana,11.6
 Massachusetts,Oklahoma,11.6
 Massachusetts,Pennsylvania,11.6
@@ -192,7 +203,7 @@ Michigan,Oklahoma,11.93
 Michigan,Pennsylvania,11.93
 Michigan,Texas,11.93
 Michigan,West Virginia,11.93
-Michigan,Colorado,10.14
+Michigan,Colorado,10.12
 Michigan,Ohio,6.63
 Michigan,Wyoming,6.06
 Michigan,North Dakota,5.54
@@ -219,14 +230,14 @@ Mississippi,Ohio,6.63
 Mississippi,Wyoming,6.06
 Mississippi,North Dakota,5.54
 Mississippi,Arkansas,0.05
+Missouri,Oklahoma,10.89
 Missouri,Colorado,10.89
 Missouri,Louisiana,10.89
 Missouri,New Mexico,10.89
-Missouri,Oklahoma,10.89
+Missouri,Pennsylvania,10.89
 Missouri,Texas,10.89
 Missouri,West Virginia,10.89
-Missouri,Pennsylvania,10.87
-Missouri,Ohio,8.63
+Missouri,Ohio,8.6
 Missouri,Wyoming,7.88
 Missouri,North Dakota,7.2
 Missouri,Arkansas,0.06
@@ -252,16 +263,16 @@ Nebraska,Pennsylvania,9.98
 Nebraska,Texas,9.98
 Nebraska,West Virginia,9.98
 Nebraska,Arkansas,0.05
-Nevada,Colorado,10.65
+Nevada,Colorado,10.67
 Nevada,Louisiana,10.65
 Nevada,New Mexico,10.65
 Nevada,Oklahoma,10.65
+Nevada,Pennsylvania,10.65
 Nevada,Texas,10.65
 Nevada,West Virginia,10.65
-Nevada,Pennsylvania,10.62
 Nevada,Ohio,9.25
-Nevada,Wyoming,8.48
-Nevada,North Dakota,7.74
+Nevada,Wyoming,8.44
+Nevada,North Dakota,7.73
 Nevada,Arkansas,0.03
 New Hampshire,Louisiana,10.03
 New Hampshire,North Dakota,10.03
@@ -280,7 +291,7 @@ New Jersey,Oklahoma,11.93
 New Jersey,Pennsylvania,11.93
 New Jersey,Texas,11.93
 New Jersey,West Virginia,11.93
-New Jersey,Colorado,10.14
+New Jersey,Colorado,10.12
 New Jersey,Ohio,6.63
 New Jersey,Wyoming,6.06
 New Jersey,North Dakota,5.54
@@ -307,17 +318,17 @@ North Carolina,Ohio,6.63
 North Carolina,Wyoming,6.06
 North Carolina,North Dakota,5.54
 North Carolina,Arkansas,0.05
-Oregon,Colorado,10.79
-Oregon,Louisiana,10.77
-Oregon,New Mexico,10.77
+Oregon,Colorado,10.8
+Oregon,New Mexico,10.8
 Oregon,Oklahoma,10.77
+Oregon,Louisiana,10.77
 Oregon,Pennsylvania,10.77
 Oregon,Texas,10.77
 Oregon,West Virginia,10.77
-Oregon,Ohio,8.93
+Oregon,Ohio,8.9
 Oregon,Wyoming,8.16
 Oregon,North Dakota,7.46
-Oregon,Arkansas,0.06
+Oregon,Arkansas,0.05
 Rhode Island,Pennsylvania,10.07
 Rhode Island,Colorado,9.98
 Rhode Island,Louisiana,9.98

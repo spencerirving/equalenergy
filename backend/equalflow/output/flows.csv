@@ -14,7 +14,7 @@ Arkansas,Iowa,200000000
 Arkansas,Kansas,100000000
 Arkansas,Kentucky,100000000
 Arkansas,Maine,100000000
-Arkansas,Maryland,165413000.0
+Arkansas,Maryland,100000000
 Arkansas,Massachusetts,200000000
 Arkansas,Michigan,200000000
 Arkansas,Minnesota,200000000
@@ -27,7 +27,7 @@ Arkansas,New Hampshire,100000000
 Arkansas,New Jersey,200000000
 Arkansas,New York,200000000
 Arkansas,North Carolina,200000000
-Arkansas,Oregon,200000000
+Arkansas,Oregon,165413000.0
 Arkansas,Rhode Island,100000000
 Arkansas,South Carolina,200000000
 Arkansas,South Dakota,100000000
@@ -37,35 +37,36 @@ Arkansas,Vermont,100000000
 Arkansas,Virginia,200000000
 Arkansas,Washington,200000000
 Arkansas,Wisconsin,200000000
-Colorado,Alabama,42428703000.0
+Arkansas,Hawaii,100000000
+Colorado,Alabama,42400000000
 Colorado,Alaska,11100000000
 Colorado,Arizona,42400000000
 Colorado,California,42500000000
-Colorado,Connecticut,32316244000.0
+Colorado,Connecticut,32384648000.0
 Colorado,Delaware,8500000000
 Colorado,Florida,42500000000
-Colorado,Georgia,42500000000
+Colorado,Georgia,42400000000
 Colorado,Idaho,14700000000
-Colorado,Illinois,42500000000
-Colorado,Indiana,42500000000
+Colorado,Illinois,42486828000.0
+Colorado,Indiana,42400000000
 Colorado,Iowa,42400000000
 Colorado,Kansas,18800000000
 Colorado,Kentucky,28100000000
 Colorado,Maine,5900000000
 Colorado,Maryland,32400000000
 Colorado,Massachusetts,42400000000
-Colorado,Michigan,42500000000
+Colorado,Michigan,42400000000
 Colorado,Minnesota,42400000000
 Colorado,Mississippi,42400000000
 Colorado,Missouri,35100000000
 Colorado,Montana,5400000000
 Colorado,Nebraska,21000000000
-Colorado,Nevada,31900000000
+Colorado,Nevada,31961616000.0
 Colorado,New Hampshire,5919345000.0
-Colorado,New Jersey,42500000000
+Colorado,New Jersey,42400000000
 Colorado,New York,42500000000
 Colorado,North Carolina,42400000000
-Colorado,Oregon,33588145000.0
+Colorado,Oregon,33600000000
 Colorado,Rhode Island,10100000000
 Colorado,South Carolina,39700000000
 Colorado,South Dakota,9900000000
@@ -75,6 +76,7 @@ Colorado,Vermont,1300000000
 Colorado,Virginia,42400000000
 Colorado,Washington,42400000000
 Colorado,Wisconsin,42400000000
+Colorado,Hawaii,300000000
 Louisiana,Alabama,50000000000
 Louisiana,Alaska,11018109000.0
 Louisiana,Arizona,50000000000
@@ -88,7 +90,7 @@ Louisiana,Illinois,50000000000
 Louisiana,Indiana,50000000000
 Louisiana,Iowa,50000000000
 Louisiana,Kansas,18700000000
-Louisiana,Kentucky,28198828000.0
+Louisiana,Kentucky,28200000000
 Louisiana,Maine,5904097000.0
 Louisiana,Maryland,32400000000
 Louisiana,Massachusetts,45400000000
@@ -113,6 +115,7 @@ Louisiana,Vermont,1300000000
 Louisiana,Virginia,50000000000
 Louisiana,Washington,42400000000
 Louisiana,Wisconsin,50000000000
+Louisiana,Hawaii,300000000
 New Mexico,Alabama,50000000000
 New Mexico,Alaska,11100000000
 New Mexico,Arizona,50000000000
@@ -128,7 +131,7 @@ New Mexico,Iowa,50000000000
 New Mexico,Kansas,18800000000
 New Mexico,Kentucky,28100000000
 New Mexico,Maine,5900000000
-New Mexico,Maryland,32347754000.0
+New Mexico,Maryland,32400000000
 New Mexico,Massachusetts,45300000000
 New Mexico,Michigan,50000000000
 New Mexico,Minnesota,50000000000
@@ -141,7 +144,7 @@ New Mexico,New Hampshire,5900000000
 New Mexico,New Jersey,50000000000
 New Mexico,New York,50000000000
 New Mexico,North Carolina,50000000000
-New Mexico,Oregon,33500000000
+New Mexico,Oregon,33600000000
 New Mexico,Rhode Island,10100000000
 New Mexico,South Carolina,39700000000
 New Mexico,South Dakota,9900000000
@@ -151,20 +154,21 @@ New Mexico,Vermont,1202943000.0
 New Mexico,Virginia,50000000000
 New Mexico,Washington,42400000000
 New Mexico,Wisconsin,50000000000
+New Mexico,Hawaii,300000000
 North Dakota,Alabama,23200000000
 North Dakota,Alaska,11100000000
 North Dakota,Arizona,23200000000
-North Dakota,California,23300000000
+North Dakota,California,23200000000
 North Dakota,Connecticut,23200000000
 North Dakota,Delaware,8500000000
-North Dakota,Florida,23255683000.0
+North Dakota,Florida,23200000000
 North Dakota,Georgia,23200000000
 North Dakota,Idaho,14647662000.0
 North Dakota,Illinois,23200000000
 North Dakota,Indiana,23200000000
 North Dakota,Iowa,23200000000
 North Dakota,Kansas,18700000000
-North Dakota,Kentucky,23200000000
+North Dakota,Kentucky,23100000000
 North Dakota,Maine,6000000000
 North Dakota,Maryland,23200000000
 North Dakota,Massachusetts,23200000000
@@ -174,7 +178,7 @@ North Dakota,Mississippi,23200000000
 North Dakota,Missouri,23200000000
 North Dakota,Montana,5400000000
 North Dakota,Nebraska,20949560000.0
-North Dakota,Nevada,23200000000
+North Dakota,Nevada,23155683000.0
 North Dakota,New Hampshire,6000000000
 North Dakota,New Jersey,23200000000
 North Dakota,New York,23200000000
@@ -189,11 +193,12 @@ North Dakota,Vermont,1300000000
 North Dakota,Virginia,23200000000
 North Dakota,Washington,23200000000
 North Dakota,Wisconsin,23200000000
+North Dakota,Hawaii,300000000
 Ohio,Alabama,27800000000
 Ohio,Alaska,11100000000
 Ohio,Arizona,27800000000
 Ohio,California,27800000000
-Ohio,Connecticut,27727303000.0
+Ohio,Connecticut,27700000000
 Ohio,Delaware,8500000000
 Ohio,Florida,27800000000
 Ohio,Georgia,27800000000
@@ -204,12 +209,12 @@ Ohio,Iowa,27800000000
 Ohio,Kansas,18700000000
 Ohio,Kentucky,27700000000
 Ohio,Maine,6000000000
-Ohio,Maryland,27800000000
+Ohio,Maryland,27700000000
 Ohio,Massachusetts,27800000000
 Ohio,Michigan,27800000000
 Ohio,Minnesota,27800000000
 Ohio,Mississippi,27800000000
-Ohio,Missouri,27800000000
+Ohio,Missouri,27727303000.0
 Ohio,Montana,5300000000
 Ohio,Nebraska,20900000000
 Ohio,Nevada,27700000000
@@ -217,7 +222,7 @@ Ohio,New Hampshire,6000000000
 Ohio,New Jersey,27800000000
 Ohio,New York,27800000000
 Ohio,North Carolina,27800000000
-Ohio,Oregon,27800000000
+Ohio,Oregon,27700000000
 Ohio,Rhode Island,10100000000
 Ohio,South Carolina,27800000000
 Ohio,South Dakota,9900000000
@@ -227,6 +232,7 @@ Ohio,Vermont,1300000000
 Ohio,Virginia,27800000000
 Ohio,Washington,27800000000
 Ohio,Wisconsin,27800000000
+Ohio,Hawaii,300000000
 Oklahoma,Alabama,50000000000
 Oklahoma,Alaska,11100000000
 Oklahoma,Arizona,50000000000
@@ -240,14 +246,14 @@ Oklahoma,Illinois,50000000000
 Oklahoma,Indiana,50000000000
 Oklahoma,Iowa,50000000000
 Oklahoma,Kansas,18800000000
-Oklahoma,Kentucky,28100000000
+Oklahoma,Kentucky,28200000000
 Oklahoma,Maine,5900000000
 Oklahoma,Maryland,32400000000
 Oklahoma,Massachusetts,45400000000
 Oklahoma,Michigan,50000000000
 Oklahoma,Minnesota,50000000000
 Oklahoma,Mississippi,50000000000
-Oklahoma,Missouri,35100000000
+Oklahoma,Missouri,35105929000.0
 Oklahoma,Montana,5300000000
 Oklahoma,Nebraska,20900000000
 Oklahoma,Nevada,31900000000
@@ -255,7 +261,7 @@ Oklahoma,New Hampshire,6000000000
 Oklahoma,New Jersey,50000000000
 Oklahoma,New York,50000000000
 Oklahoma,North Carolina,50000000000
-Oklahoma,Oregon,33500000000
+Oklahoma,Oregon,33522732000.0
 Oklahoma,Rhode Island,10100000000
 Oklahoma,South Carolina,39700000000
 Oklahoma,South Dakota,9900000000
@@ -265,6 +271,7 @@ Oklahoma,Vermont,1300000000
 Oklahoma,Virginia,50000000000
 Oklahoma,Washington,42400000000
 Oklahoma,Wisconsin,50000000000
+Oklahoma,Hawaii,300000000
 Pennsylvania,Alabama,50000000000
 Pennsylvania,Alaska,11100000000
 Pennsylvania,Arizona,50000000000
@@ -280,15 +287,15 @@ Pennsylvania,Iowa,50000000000
 Pennsylvania,Kansas,18700000000
 Pennsylvania,Kentucky,28200000000
 Pennsylvania,Maine,6000000000
-Pennsylvania,Maryland,32400000000
+Pennsylvania,Maryland,32500000000
 Pennsylvania,Massachusetts,45400000000
 Pennsylvania,Michigan,50000000000
 Pennsylvania,Minnesota,50000000000
 Pennsylvania,Mississippi,50000000000
-Pennsylvania,Missouri,35033232000.0
+Pennsylvania,Missouri,35100000000
 Pennsylvania,Montana,5300000000
 Pennsylvania,Nebraska,20900000000
-Pennsylvania,Nevada,31817299000.0
+Pennsylvania,Nevada,31900000000
 Pennsylvania,New Hampshire,6000000000
 Pennsylvania,New Jersey,50000000000
 Pennsylvania,New York,50000000000
@@ -303,6 +310,7 @@ Pennsylvania,Vermont,1300000000
 Pennsylvania,Virginia,50000000000
 Pennsylvania,Washington,42373924000.0
 Pennsylvania,Wisconsin,50000000000
+Pennsylvania,Hawaii,293371000.0
 Texas,Alabama,50000000000
 Texas,Alaska,11100000000
 Texas,Arizona,50000000000
@@ -316,7 +324,7 @@ Texas,Illinois,50000000000
 Texas,Indiana,50000000000
 Texas,Iowa,50000000000
 Texas,Kansas,18800000000
-Texas,Kentucky,28100000000
+Texas,Kentucky,28198828000.0
 Texas,Maine,5900000000
 Texas,Maryland,32400000000
 Texas,Massachusetts,45326916000.0
@@ -341,6 +349,7 @@ Texas,Vermont,1300000000
 Texas,Virginia,50000000000
 Texas,Washington,42400000000
 Texas,Wisconsin,50000000000
+Texas,Hawaii,300000000
 West Virginia,Alabama,50000000000
 West Virginia,Alaska,11100000000
 West Virginia,Arizona,50000000000
@@ -356,7 +365,7 @@ West Virginia,Iowa,50000000000
 West Virginia,Kansas,18700000000
 West Virginia,Kentucky,28200000000
 West Virginia,Maine,6000000000
-West Virginia,Maryland,32400000000
+West Virginia,Maryland,32413167000.0
 West Virginia,Massachusetts,45400000000
 West Virginia,Michigan,50000000000
 West Virginia,Minnesota,50000000000
@@ -379,11 +388,12 @@ West Virginia,Vermont,1300000000
 West Virginia,Virginia,50000000000
 West Virginia,Washington,42400000000
 West Virginia,Wisconsin,50000000000
+West Virginia,Hawaii,300000000
 Wyoming,Alabama,25400000000
 Wyoming,Alaska,11100000000
 Wyoming,Arizona,25400000000
-Wyoming,California,25458899000.0
-Wyoming,Connecticut,25400000000
+Wyoming,California,25400000000
+Wyoming,Connecticut,25358899000.0
 Wyoming,Delaware,8500000000
 Wyoming,Florida,25400000000
 Wyoming,Georgia,25400000000
@@ -392,7 +402,7 @@ Wyoming,Illinois,25400000000
 Wyoming,Indiana,25400000000
 Wyoming,Iowa,25400000000
 Wyoming,Kansas,18708266000.0
-Wyoming,Kentucky,25400000000
+Wyoming,Kentucky,25300000000
 Wyoming,Maine,5900000000
 Wyoming,Maryland,25400000000
 Wyoming,Massachusetts,25400000000
@@ -402,7 +412,7 @@ Wyoming,Mississippi,25400000000
 Wyoming,Missouri,25400000000
 Wyoming,Montana,5400000000
 Wyoming,Nebraska,21000000000
-Wyoming,Nevada,25400000000
+Wyoming,Nevada,25300000000
 Wyoming,New Hampshire,5900000000
 Wyoming,New Jersey,25400000000
 Wyoming,New York,25400000000
@@ -417,3 +427,4 @@ Wyoming,Vermont,1300000000
 Wyoming,Virginia,25400000000
 Wyoming,Washington,25400000000
 Wyoming,Wisconsin,25400000000
+Wyoming,Hawaii,300000000

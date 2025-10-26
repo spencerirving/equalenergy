@@ -1,4 +1,5 @@
 import json, os
+import subprocess
 from .io import load_states, load_latlon, save_state_prices, save_flows
 from .engine import convert_units, build_transport_costs, greedy_match, summarize
 
@@ -16,6 +17,12 @@ def main():
     summary = summarize(states)#quantitative summary - total consuption, total production
     with open(os.path.join(OUT_DIR, "summary.json"), "w") as f:#readable output
         json.dump(summary, f, indent=2)
+    src_dir = os.path.dirname(__file__)
+    subprocess.run(
+        ["python", "calculate_percentages.py"],
+        check=True,
+        cwd=src_dir  # <-- sets working directory before running the script
+    )
     print("Done. See output/ for results.")
 
 if __name__ == '__main__':
